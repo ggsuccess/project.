@@ -4,7 +4,7 @@ import './Row.css';
 
 const base_url = 'https://image.tmdb.org/t/p/original/';
 
-function Row({ title, fetchUrl }) {
+const Row = ({ title, fetchUrl }) => {
   const [movies, setMovies] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
@@ -29,6 +29,6 @@ function Row({ title, fetchUrl }) {
       </div>
     </div>
   );
-}
+};
 
 export default Row;
