@@ -21,6 +21,7 @@ const Row = ({ title, fetchUrl }) => {
       <div className="row-posters">
         {movies.map((movie) => (
           <img
+            key={movie.id}
             className="row-poster"
             src={`${base_url}${movie.poster_path}`}
             alt={movie.name}
